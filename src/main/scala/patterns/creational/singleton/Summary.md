@@ -1,0 +1,6 @@
+## What it is not so good for?
+Often, the singleton design pattern is actually considered an anti-pattern. Many people say that global state should not exist the way it does with singleton classes. Some say that if you have to use singletons, you should try and refactor your code. While this is true in some cases, there is sometimes a good use for singletons. Generally, the rule of thumb is—if you can avoid them, then do.
+
+Another thing that could be pointed out specifically for Scala singletons is that they can really have only one instance. While this is the actual definition of the pattern, with other languages, we could have a predefined number of more than just one singleton object and have some control on this using custom logic.
+
+This does not really affect Scala but it is still worth mentioning. In the case where a singleton is initialized lazily in an application, in order to provide thread safety, you need to rely on locking mechanisms, for example, the double-checked locking mentioned in the previous section. Accessing the singletons in an application, no matter if it's Scala or not, also needs to be done in a thread-safe way or the singleton should take care of this internally.
