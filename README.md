@@ -1,0 +1,1 @@
+Learning materials for the book **Scala Design Patterns: Design modular, clean, and scalable applications by applying proven design patterns in Scala (2nd edition)** by Ivan Nikolov. Code snippets are taken from Nikolov's book. No rights reserved.

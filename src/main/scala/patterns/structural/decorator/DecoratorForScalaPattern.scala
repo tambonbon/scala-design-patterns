@@ -31,7 +31,7 @@ object DecoratorForScalaPattern {
       new FileReader("src/main/scala/patterns/structural/decorator/deco.txt")
     )
     try {
-      val reader = new AdvancedInputReader(stream) with Base64InputReaderTrait with CapitalizedInputReaderTrait 
+      val reader = new AdvancedInputReader(stream) with Base64InputReaderTrait with CapitalizedInputReaderTrait // note the inverse order 
       reader.readLines().foreach(println(_))
     } finally {
       stream.close()

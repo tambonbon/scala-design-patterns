@@ -50,7 +50,7 @@ object DecoratorPattern {
   def main(args: Array[String]): Unit = {
     val stream = new BufferedReader(new FileReader("src/main/scala/patterns/structural/decorator/deco.txt"))
     try {
-      val reader = new CapitalizedInputReader(new Base64InputReader(new AdvancedInputReader(stream)))
+      val reader = new CapitalizedInputReader(new Base64InputReader(new AdvancedInputReader(stream))) //note we're wrapping decorator class
       reader.readLines().foreach(println(_))
     } finally {
       stream.close()
