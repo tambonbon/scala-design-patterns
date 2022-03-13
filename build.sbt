@@ -12,7 +12,8 @@ lazy val root = (project in file("."))
       scalaTest % Test,
       "commons-codec" % "commons-codec" % "1.15",
       "com.typesafe.scala-logging" %% "scala-logging" % "3.9.4",
-      "org.json4s" %% "json4s-native" % "4.0.3"
+      "org.json4s" %% "json4s-jackson" % "4.0.3",
+      "com.github.tototoshi" %% "scala-csv" % "1.3.10"
     
   )
 )
