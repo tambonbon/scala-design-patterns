@@ -1,0 +1,12 @@
+- We have handlers which use the implemented functions lying inside `PermissionRepoImpl` and `UserRepoImpl`.
+- These handlers take `Repo` as the dependency.
+- There're 2 ways to do DI on handlers:
+  - Constructor Injection
+    - Default
+    - Easy
+  - Reader Monad
+
+- Main concern of Constructor Injection:
+  - functions required `Repo` as its argument
+  - when dependencies are injected at the top level, they have to be passed around from one function to another, regardless whether there's anything uses them
+  - `Reader Monad` lets us encode dependencies directly into the type, while providing compose-ity e.g. `map` `flatMap`.

@@ -1,0 +1,1 @@
+`UserRepo` and `PermissionRepo` are main dependencies of the app. There is `Repo` case class in `protocol` package which wraps these dependencies.
