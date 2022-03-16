@@ -1,0 +1,7 @@
+- We often use libraries, but they are quite generic sometimes, so we sometimes need to do something extra that is specific to our use case. However, we cannot modify the library, clearly..
+- If you can recall, we already have decorator and adapter design patterns that can achieve something similar.
+- Pimp my libraries does it in Scala way, and some of extra work is given to the compiler to deal with.
+
+## Pros:
+- Extremely easy to use, as it facilitates implicit class
+- ALternative to decorator pattern when the class to be extended is final
